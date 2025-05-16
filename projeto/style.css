@@ -1,0 +1,291 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container centralizado para conteúdo */
+  .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #006B4A;
+    padding: 20px 0;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Navegação */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 100px 0 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+    background-color: #00432a;
+    outline: none;
+  }
+  
+  /* Seções */
+  section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+  }
+  
+  /* Serviços */
+  #servicos .servicos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  #servicos ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  #servicos ul li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  
+  #servicos ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Preços */
+  #precos ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  #precos li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #precos li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Certificações, galeria, depoimentos, agendamento */
+  #certificacoes,
+  #galeria,
+  #depoimentos,
+  #agendamento {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  #certificacoes img,
+  #galeria img {
+    max-width: 300px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 8px;
+  }
+  
+  blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #006B4A;
+    margin: 20px auto;
+    padding: 10px 20px;
+    max-width: 700px;
+    background-color: #f0f9f5;
+    border-radius: 4px;
+  }
+  
+  /* Agendamento link */
+  #agendamento a {
+    display: inline-block;
+    background-color: #006B4A;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #agendamento a:hover,
+  #agendamento a:focus {
+    background-color: #00432a;
+    outline: none;
+  }
+  
+  /* Formulário */
+  form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  form input,
+  form textarea {
+    padding: 15px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #008C6A;
+    outline: none;
+  }
+  
+  form button {
+    padding: 15px 20px;
+    font-size: 1.1em;
+    background-color: #008C6A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover,
+  form button:focus {
+    background-color: #006B4A;
+    outline: none;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    section {
+      padding: 60px 20px;
+    }
+  
+    #servicos .servicos-lista {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    #servicos ul {
+      text-align: left;
+    }
+  
+    form {
+      width: 90%;
+    }
+  
+    #precos ul {
+      max-width: 100%;
+    }
+  }
+
+  .logo {
+    width: 125px;
+    margin-right: 100px;
+  }
+
+  .topo {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
